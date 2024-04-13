@@ -33,6 +33,7 @@
     "@astrojs/mdx": "^2.2.4",
     "@astrojs/partytown": "^2.0.4",
     "@astrojs/tailwind": "5.1.0",
+    "@cloudflare/wrangler": "^1.21.0",
     "@eslint/js": "^9.0.0",
     "@iconify-json/flat-color-icons": "^1.1.10",
     "@iconify-json/tabler": "^1.1.109",
@@ -57,6 +58,7 @@
     "tailwind-merge": "^2.2.2",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5",
-    "typescript-eslint": "^7.6.0"
+    "typescript-eslint": "^7.6.0",
+    "wrangler": "^3.50.0"
   }
 }
