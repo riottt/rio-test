@@ -14,7 +14,7 @@ import Brands from '~/components/widgets/Brands.astro';
 import { YouTube } from '@astro-community/astro-embed-youtube';
 
 const metadata = {
-  title: 'Startup Landing Page',
+  title: 'スタートアップのためのランディングページ',
 };
 ---
 
@@ -22,31 +22,29 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Startup Web Demo"
+    tagline="スタートアップウェブデモ"
     actions={[
       {
         variant: 'primary',
         target: '_blank',
-        text: 'Get templates',
+        text: 'テンプレートを入手',
         href: 'https://github.com/onwidget/astrowind',
         icon: 'tabler:download',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'もっと詳しく', href: '#features' },
     ]}
   >
     <Fragment slot="title">
-      Improve <span class="hidden sm:inline">the online presence of</span> your <span
-        class="text-accent dark:text-white highlight">Startup</span
-      > with Astrowind templates
+      Astrowindテンプレートで<span class="hidden sm:inline">あなたの</span>スタートアップの<span
+        class="text-accent dark:text-white highlight">オンラインプレゼンスを向上</span>させましょう
     </Fragment>
 
     <Fragment slot="subtitle">
-      Step into the spotlight with <span class="font-semibold">Astrowind</span> templates, your pathway to fortifying your
-      startup's digital footprint, fostering credibility, and expanding your reach.
+      <span class="font-semibold">Astrowind</span>テンプレートでスポットライトを浴びましょう。あなたのスタートアップのデジタルフットプリントを強化し、信頼性を高め、リーチを拡大するための道筋です。
     </Fragment>
 
     <Fragment slot="image">
-      <YouTube id="gxBkghlglTg" title="Astro just Launched.... Could it be the ultimate web framework?" />
+      <YouTube id="gxBkghlglTg" title="Astroがついに発売.... 究極のウェブフレームワークになるかもしれませんか？" />
       <style is:inline>lite-youtube { margin: 0 auto; max-width: 100%; }</style>
     </Fragment>
   </Hero>
@@ -54,8 +52,8 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="About us"
-    subtitle="We believe in the magic of turning dreams into stunning realities. Founded by passionate developers with a shared vision, we set out to simplify the website creation process. Our templates bring together the innovation of Astro 4.0 and the versatility of Tailwind CSS, enabling you to express your unique brand identity like never before."
+    title="私たちについて"
+    subtitle="夢を見事な現実に変える魔法を信じています。共有ビジョンを持つ情熱的な開発者たちによって設立された私たちは、ウェブサイト作成プロセスを簡素化することを目指しています。私たちのテンプレートは、Astro 4.0の革新とTailwind CSSの多様性を組み合わせており、これまでにない方法で独自のブランドアイデンティティを表現できます。"
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -65,21 +63,21 @@ const metadata = {
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="Discover the impressive impact of Astrowind"
-    subtitle="The numbers below reflect the trust our users have placed in us and the remarkable outcomes we've helped them achieve."
+    title="Astrowindの印象的な影響を発見"
+    subtitle="以下の数字は、私たちに対するユーザーの信頼と、私たちが彼らにもたらした顕著な成果を反映しています。"
     stats={[
-      { title: 'Downloads', amount: '182K' },
-      { title: 'Websites Launched', amount: '87' },
-      { title: 'User Ratings', amount: '4.8' },
-      { title: 'Satisfied Clients', amount: '116K' },
+      { title: 'ダウンロード数', amount: '182K' },
+      { title: 'ウェブサイトの立ち上げ', amount: '87' },
+      { title: 'ユーザー評価', amount: '4.8' },
+      { title: '満足しているクライアント', amount: '116K' },
     ]}
   />
 
   <!-- Brands Widget ****************** -->
 
   <Brands
-    title="Partnerships & Collaborations"
-    subtitle="At Astrowind, we believe in the power of collaboration to drive innovation and create exceptional experiences."
+    title="パートナーシップとコラボレーション"
+    subtitle="Astrowindでは、革新を推進し、卓越した体験を創出するためのコラボレーションの力を信じています。"
     icons={[]}
     images={[
       {
@@ -94,7 +92,6 @@ const metadata = {
         src: 'https://cdn.pixabay.com/photo/2013/10/01/10/29/ebay-189064_1280.png',
         alt: 'Ebay',
       },
-
       {
         src: 'https://cdn.pixabay.com/photo/2015/04/13/17/45/icon-720944_1280.png',
         alt: 'Youtube',
@@ -125,25 +122,25 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="What services do we provide?"
-    subtitle="We offer a wide range of website templates that suit various industries and purposes such as business, portfolio, e-commerce, blog, etc."
+    title="私たちが提供するサービスは？"
+    subtitle="ビジネス、ポートフォリオ、eコマース、ブログなど、さまざまな業界や目的に適したウェブサイトテンプレートを幅広く提供しています。"
     items={[
       {
-        title: 'Installation Instructions',
+        title: 'インストール手順',
         description:
-          'Offer clear instructions on how to download the purchased templates and install them on various website platforms or content management systems.',
+          '購入したテンプレートをダウンロードし、さまざまなウェブサイトプラットフォームやコンテンツ管理システムにインストールする方法について、明確な指示を提供します。',
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Demo and Previews',
+        title: 'デモとプレビュー',
         description:
-          'Provide interactive demos and previews that allow customers to see how their chosen template will look and function before making a purchase.',
+          'お客様が購入前に選択したテンプレートがどのように見え、機能するかを確認できるように、インタラクティブなデモとプレビューを提供します。',
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Technical Support',
+        title: 'テクニカルサポート',
         description:
-          'Providing customer support for any technical issues related to the templates or their implementation.',
+          'テンプレートやその実装に関連する技術的な問題に対するカスタマーサポートを提供します。',
         icon: 'flat-color-icons:voice-presentation',
       },
     ]}
@@ -157,41 +154,41 @@ const metadata = {
 
   <Features
     id="features"
-    title="Main features of our templates"
-    subtitle="Possess several key characteristics to effectively cater to the needs of startups and entrepreneurs."
+    title="私たちのテンプレートの主な特徴"
+    subtitle="スタートアップや起業家のニーズに効果的に対応するために、いくつかの重要な特性を持っています。"
     columns={3}
     items={[
       {
-        title: 'Modern and Professional Design',
+        title: 'モダンでプロフェッショナルなデザイン',
         description:
-          'Have a contemporary design that reflects current design trends and gives a professional impression.',
+          '現在のデザイントレンドを反映し、プロフェッショナルな印象を与える現代的なデザインを持っています。',
         icon: 'tabler:artboard',
       },
       {
-        title: 'Responsive and Mobile-Friendly',
-        description: 'Adapt seamlessly to different screen sizes and devices to ensure a consistent experience.',
+        title: 'レスポンシブでモバイルフレンドリー',
+        description: 'さまざまな画面サイズやデバイスにシームレスに適応し、一貫した体験を保証します。',
         icon: 'tabler:picture-in-picture',
       },
       {
-        title: 'Customizability',
+        title: 'カスタマイズ可能',
         description:
-          'Easily customizable, allowing users to adapt the design, colors, typography, and content to match their brand identity.',
+          'デザイン、色、タイポグラフィ、コンテンツをブランドアイデンティティに合わせて簡単にカスタマイズできます。',
         icon: 'tabler:adjustments-horizontal',
       },
       {
-        title: 'Fast Loading Times',
-        description: 'Optimized for speed to ensure a smooth user experience and favorable search engine rankings.',
+        title: '高速なローディングタイム',
+        description: 'スムーズなユーザーエクスペリエンスと有利な検索エンジンランキングを保証するために、速度に最適化されています。',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: '検索エンジン最適化（SEO）',
         description:
-          'Incorporate SEO best practices in template structure and code to improve visibility in search engine results.',
+          '検索エンジンの結果での可視性を向上させるために、テンプレートの構造とコードにSEOのベストプラクティスを組み込んでいます。',
         icon: 'tabler:arrows-right-left',
       },
       {
-        title: 'Compatibility',
-        description: 'The templates work seamlessly across various content management systems and website builders.',
+        title: '互換性',
+        description: 'さまざまなコンテンツ管理システムやウェブサイトビルダーでシームレスに動作します。',
         icon: 'tabler:plug-connected',
       },
     ]}
@@ -200,37 +197,37 @@ const metadata = {
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
+    title="よくある質問"
     items={[
       {
-        title: 'What are landing page templates?',
+        title: 'ランディングページテンプレートとは何ですか？',
         description:
-          'Landing page templates are pre-designed web page layouts that are specifically created to serve as a foundation for building effective landing pages. These templates are designed to capture the attention of visitors and guide them towards a specific action or goal, such as signing up for a newsletter, making a purchase, or downloading a resource.',
+          'ランディングページテンプレートは、効果的なランディングページを構築するための基盤として特別に作成された事前設計されたウェブページレイアウトです。これらのテンプレートは、訪問者の注意を引き、ニュースレターへのサインアップ、購入の実行、リソースのダウンロードなど、特定のアクションや目標に向けて導くように設計されています。',
       },
       {
-        title: 'Why should I use a template?',
+        title: 'なぜテンプレートを使用するべきですか？',
         description:
-          'Some of the advantages are that they provide a ready-to-use structure,  saving you significant time. Are designed with user-friendliness in mind and provide a cost-effective alternative, saving you money while still delivering a quality result.',
+          '利点の一つとして、使用準備が整っている構造を提供し、大幅な時間を節約できます。ユーザーフレンドリーな設計が施されており、品質の結果を提供しながらお金を節約できる費用効果的な代替手段を提供します。',
       },
       {
-        title: 'Can I preview templates before buying?',
+        title: '購入前にテンプレートをプレビューできますか？',
         description:
-          'Yes, the templates allow you to preview them before making a purchase. There is a "Demo" button associated with each template.',
+          'はい、テンプレートには「デモ」ボタンがあり、購入前にプレビューすることができます。',
       },
       {
-        title: 'Do I need technical skills to use a template?',
+        title: 'テンプレートを使用するために技術的なスキルは必要ですか？',
         description:
-          'Advanced technical skills are not required to use a template, but having a basic understanding of web navigation and familiarity with using online tools can still be beneficial. If you have more specific customization needs, you might need to consult guides or reach out to customer support for assistance.',
+          'テンプレートを使用するために高度な技術的スキルは必要ありませんが、ウェブナビゲーションの基本的な理解とオンラインツールの使用経験があると便利です。より具体的なカスタマイズが必要な場合は、ガイドを参照するか、カスタマーサポートに相談する必要があります。',
       },
       {
-        title: 'Can I use the template on multiple websites?',
+        title: 'テンプレートを複数のウェブサイトで使用できますか？',
         description:
-          'No, the template comes with a single-use license, meaning you can use the template on one website or project only. Using the template on additional websites would require purchasing additional licenses.',
+          'いいえ、テンプレートは一つのウェブサイトまたはプロジェクトでのみ使用するためのシングルユースライセンスが付属しています。追加のウェブサイトでテンプレートを使用するには、追加のライセンスを購入する必要があります。',
       },
       {
-        title: 'What if I need help with customization?',
+        title: 'カスタマイズに関するサポートが必要な場合はどうすればいいですか？',
         description:
-          "The templates provides a comprehensive step-by-step guide that walk you through the customization process. If you still have doubts, you can reach out to our customer support team. They can answer your questions, provide guidance on customization, and address any issues you're facing.",
+          'テンプレートには、カスタマイズプロセスを段階的に説明する包括的なガイドが提供されています。それでも疑問がある場合は、カスタマーサポートチームに連絡することができます。彼らはあなたの質問に答え、カスタマイズに関するガイダンスを提供し、直面している問題に対処することができます。',
       },
     ]}
   >
@@ -242,46 +239,46 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Let us know how we can help"
-    subtitle="We’re here to help and answer any question you might have."
+    title="お問い合わせ"
+    subtitle="ご質問がある場合は、お気軽にお問い合わせください。"
     columns={4}
     items={[
       {
-        title: 'Phone',
+        title: '電話',
         icon: 'tabler:phone',
         callToAction: {
           target: '_blank',
-          text: 'Call us',
+          text: 'お電話でのお問い合わせ',
           href: '/',
           variant: 'link',
         },
       },
       {
-        title: 'Email',
+        title: 'メール',
         icon: 'tabler:mail',
         callToAction: {
           target: '_blank',
-          text: 'Write to us',
+          text: 'メールでのお問い合わせ',
           href: '/',
           variant: 'link',
         },
       },
       {
-        title: 'Chat with sales',
+        title: 'セールスとのチャット',
         icon: 'tabler:message-circle',
         callToAction: {
           target: '_blank',
-          text: 'Start chatting',
+          text: 'チャットを開始',
           href: '/',
           variant: 'link',
         },
       },
       {
-        title: 'Chat with support',
+        title: 'サポートとのチャット',
         icon: 'tabler:message-circle',
         callToAction: {
           target: '_blank',
-          text: 'Start chatting',
+          text: 'チャットを開始',
           href: '/',
           variant: 'link',
         },
@@ -296,17 +293,16 @@ const metadata = {
       {
         variant: 'primary',
         target: '_blank',
-        text: 'Get templates',
+        text: 'テンプレートを入手',
         href: 'https://github.com/onwidget/astrowind',
         icon: 'tabler:download',
       },
     ]}
   >
-    <Fragment slot="title">Be a part of our vision</Fragment>
+    <Fragment slot="title">私たちのビジョンの一部になりましょう</Fragment>
 
     <Fragment slot="subtitle">
-      Discover a dynamic work environment, unparalleled growth opportunities, and the chance to make a meaningful
-      impact.
+      ダイナミックな職場環境、比類のない成長の機会、そして意義ある影響を与えるチャンスを発見してください。
     </Fragment>
   </CallToAction>
 </Layout>
